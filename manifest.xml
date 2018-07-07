@@ -1,0 +1,17 @@
+
+    <manifest>
+      <remote  name="aosp"
+               fetch="https://android.googlesource.com/"/>
+      <remote  name="MOHAN221100"
+               fetch="https://github.com/MOHAN221100/"/>
+    
+      <default revision="master"
+               remote="aosp"
+               sync-j="4" />
+    
+      <project path="art" name="platform/art" />
+      <project path="bionic" name="platform/bionic" groups="pdk" />
+      <project path="dalvik" name="platform_dalvik” remote=“udinic”/>
+      <project path="frameworks/base" name="platform_frameworks_base" remote=“udinic" revision=“statusbar_fixes"/>
+      <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
+    </manifest>
